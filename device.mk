@@ -24,7 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/aosp-p31xx
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/espressorf \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # Packages
@@ -42,5 +41,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Use the non-open-source parts, if they're present
-$(call inherit-product-if-exists, vendor/samsung/p31xx/p3100-vendor.mk)
-$(call inherit-product-if-exists, vendor/samsung/p31xx/p31xx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/espresso3g/espresso3g-vendor.mk)

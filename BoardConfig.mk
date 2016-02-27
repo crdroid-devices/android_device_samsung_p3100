@@ -19,11 +19,5 @@
 
 TARGET_BOARD_INFO_FILE := device/samsung/p3100/board-info.txt
 
-# Inline kernel building
-TARGET_KERNEL_CONFIG := cyanogenmod_p3100_defconfig
-
 # assert
 TARGET_OTA_ASSERT_DEVICE := espresso,p3100,GT-P3100,espressorf,espressorfxx
-
-# Use the non-open-source parts, if they're present
--include vendor/samsung/p31xx/BoardConfigVendor.mk
